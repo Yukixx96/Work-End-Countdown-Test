@@ -5,6 +5,29 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>下班倒计时 ver3.2 powered by Liu Yuqing</title>
 <style>
+
+.timeline-legend {
+  display: flex;
+  flex-wrap: wrap; /* 小屏幕下允许换行 */
+  justify-content: center; /* 居中对齐图例 */
+  gap: 8px 12px; /* 每个图例项之间有间隔 */
+  margin-top: 10px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  white-space: nowrap; /* 不自动换行 */
+  font-size: 0.9em;
+}
+
+.legend-color {
+  width: 16px;
+  height: 16px;
+  border-radius: 3px;
+  margin-right: 6px;
+}
+
 :root {
   --work-color: #64B5F6;
   --overtime-color: #E57373;
