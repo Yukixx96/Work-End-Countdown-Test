@@ -987,7 +987,7 @@ document.addEventListener('DOMContentLoaded',  function() {
   // 设置计费更新按钮 
   document.getElementById("updatePayRateBtn").addEventListener("click",  function() {
     const newRate = parseInt(document.getElementById("payRateInput").value); 
-    if (!isNaN(newRate) && newRate > 0) {
+    if (!isNaN(newRate) && newRate >= 0) {
       payRate = newRate;
       document.getElementById("payRateDisplay").textContent  = 
         payRate.toLocaleString(currentLang  === 'ja' ? 'ja-JP' : undefined) + ' ' + 
