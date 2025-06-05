@@ -354,11 +354,11 @@ function updateOvertimePay() {
   const t = translations[currentLang];
   const now = new Date();
   
-//  if (!isOvertime || !overtimeStart) {
-//    document.getElementById("overtimePayDisplay").textContent  = "¥ 0";
-//    document.getElementById("overtimePayDetails").textContent  = "--";
-//    return;
-//  }
+  if ( (!isOvertime || !overtimeStart) && now <= nightRestStart  ) {
+    document.getElementById("overtimePayDisplay").textContent  = "¥ 0";
+    document.getElementById("overtimePayDetails").textContent  = "--";
+    return;
+  }
   
   let overtimeHours;
   let overtimeDuration;
