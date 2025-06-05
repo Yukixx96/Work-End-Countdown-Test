@@ -756,18 +756,19 @@ function updateOvertimePay() {
   const t = translations[currentLang];
   const now = new Date();
   
-  if (!isOvertime || !overtimeStart) {
-    document.getElementById("overtimePayDisplay").textContent  = "¥ 0";
-    document.getElementById("overtimePayDetails").textContent  = "--";
-    return;
-  }
+//  if (!isOvertime || !overtimeStart) {
+//    document.getElementById("overtimePayDisplay").textContent  = "¥ 0";
+//    document.getElementById("overtimePayDetails").textContent  = "--";
+//    return;
+//  }
   
   let overtimeHours;
   let overtimeDuration;
   
   if (now >= nightRestStart && now < nightRestEnd) {
     // 晚休期间不计加班费 
-    overtimeDuration = (nightRestStart - overtimeStart);
+    //overtimeDuration = (nightRestStart - overtimeStart);
+    overtimeDuration = 15*60*1000;
   } else if (now >= nightRestEnd) {
     // 晚休后计算总加班时间减去15分钟晚休 
     overtimeDuration = (now - overtimeStart - NIGHT_REST_DURATION);
