@@ -7,7 +7,7 @@ const MAX_WORK_WITHOUT_REST = 8 * 60 * 60 * 1000; // 8小时
 // 语言资源 
 const translations = {
   zh: {
-    title: "下班倒计时Test版",
+    title: "下班倒计时 测试版",
     infoInitializing: "正在初始化...",
     statusDefault: "--",
     workLegend: "工作时间",
