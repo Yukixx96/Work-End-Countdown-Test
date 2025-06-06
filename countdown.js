@@ -7,7 +7,7 @@ const MAX_WORK_WITHOUT_REST = 8 * 60 * 60 * 1000; // 8小时
 // 语言资源 
 const translations = {
   zh: {
-    title: "下班倒计时",
+    title: "下班倒计时Test版",
     infoInitializing: "正在初始化...",
     statusDefault: "--",
     workLegend: "工作时间",
@@ -34,7 +34,7 @@ const translations = {
     overtimePayFormat: "{0} 小时 × {1} {2} = {3} {4}" 
   },
   en: {
-    title: "Work End Countdown",
+    title: "Work End Countdown for Test",
     infoInitializing: "Initializing...",
     statusDefault: "--",
     workLegend: "Working Time",
@@ -61,7 +61,7 @@ const translations = {
     overtimePayFormat: "{0} hours × {1} {2} = {3} {4}"
   },
   ja: {
-    title: "ワークタイムモニター",
+    title: "ワークタイムモニター テスト版",
     infoInitializing: "初期化中...",
     statusDefault: "--",
     workLegend: "勤務時間",
